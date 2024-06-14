@@ -1,0 +1,49 @@
+Node: mriqc_wf.dwiMRIQC.dwi_reference_wf.epi_merge
+Working directory: /work/mriqc_wf/dwiMRIQC/dwi_reference_wf/_in_file_..data..sub-10448..dwi..sub-10448_dwi.nii.gz/epi_merge
+
+Node inputs:
+
+args = <undefined>
+auto_detect_sensitivity = True
+average_metric = <undefined>
+environ = {'OMP_NUM_THREADS': '1'}
+fixed_timepoint = True
+in_files = <undefined>
+in_intensity_scales = <undefined>
+initial_timepoint = 1
+initial_transforms = <undefined>
+intensity_scaling = True
+no_iteration = True
+num_threads = 1
+out_file = mri_robust_template_out.mgz
+outlier_sensitivity = <undefined>
+scaled_intensity_outputs = <undefined>
+subjects_dir = <undefined>
+subsample_threshold = 200
+transform_outputs = True
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/engine/plugin.py", line 60, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 527, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 645, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 771, in _run_command
+    raise NodeExecutionError(msg)
+nipype.pipeline.engine.nodes.NodeExecutionError: Exception raised while executing Node epi_merge.
+
+Cmdline:
+	echo Only one time point!
+Stdout:
+
+Stderr:
+
+Traceback:
+	Traceback (most recent call last):
+	  File "/opt/conda/lib/python3.9/site-packages/nipype/interfaces/base/core.py", line 397, in run
+	    runtime = self._run_interface(runtime)
+	  File "/opt/conda/lib/python3.9/site-packages/nipype/interfaces/base/core.py", line 752, in _run_interface
+	    raise IOError(
+	OSError: No command "mri_robust_template" found on host sh03-06n08.int. Please check that the corresponding package is installed.
+
