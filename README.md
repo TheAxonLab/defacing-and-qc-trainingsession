@@ -5,5 +5,5 @@ Those T1w reports were selected to present a wide range of data quality. In the 
 How to download this dataset (requires DataLad):
 
 ```
-datalad install https://github.com/TheAxonLab/defacing-and-qc-ixi-reports.git
+datalad install https://github.com/TheAxonLab/defacing-and-qc-trainingsession.git
 ```
